@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>煤球消消乐</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">煤球消消乐</h1>
+        
+        <div class="info-bar">
+            <div class="level-container">关卡: <span id="level">1</span></div>
+            <div class="score-container">分数: <span id="score">0</span></div>
+        </div>
+        
+        <div class="tools">
+            <button id="cat-food" class="tool">
+                <span class="tool-icon">🍣</span>
+                猫粮
+            </button>
+            <button id="shuffle" class="tool">
+                <span class="tool-icon">🔄</span>
+                洗牌
+            </button>
+            <button id="undo" class="tool">
+                <span class="tool-icon">↩️</span>
+                撤回
+            </button>
+        </div>
+        
+        <div class="game-container">
+            <div id="game-board" class="board"></div>
+        </div>
+    </div>
+    
+    <!-- 对话框 -->
+    <div id="dialog" class="dialog">
+        <div class="dialog-content">
+            <h2 id="dialog-title" class="dialog-title">恭喜！</h2>
+            <p id="dialog-message">关卡完成！</p>
+            <div id="dialog-buttons" class="dialog-buttons">
+                <button id="next-level" class="dialog-button">下一关</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 游戏结束对话框 -->
+    <div id="game-over-dialog" class="dialog">
+        <div class="dialog-content">
+            <h2 class="dialog-title">游戏结束</h2>
+            <p>再试一次?</p>
+            <div class="dialog-buttons">
+                <button id="restart" class="dialog-button">重新开始</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/game.js"></script>
+</body>
+</html>
